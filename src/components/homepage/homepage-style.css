@@ -1,0 +1,32 @@
+
+.parent {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    
+    
+}
+
+.container {
+    
+    min-width: 25%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 300px;
+    margin: 10;
+    display:flex;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.content{
+    height: 100px;
+    width: 150px;
+    border: 1px solid black;
+    text-align: center;
+}
+
