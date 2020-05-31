@@ -10,7 +10,7 @@ class SignIn extends React.Component {
         super(props);
 
         this.state = {
-            userName: "",
+            email: "",
             password: ""
         }
     }
@@ -22,13 +22,18 @@ class SignIn extends React.Component {
 
     handleClick = async event => {
         event.preventDefault();
-
-        await 
+        const {email, password} = this.state
+        try{
+        await auth.signInWithEmailAndPassword(email, password);
 
         this.setState({
-            userName: "",
+            email: "",
             password: ""
         })
+    }catch(error){
+        console.log(error);
+        
+    }
     }
 
     render(){
@@ -40,7 +45,7 @@ class SignIn extends React.Component {
                 </div>
                 <form className="sign-In-Form">
                 
-                    <input onChange={this.handleChange} className="userName child" type="email" name="userName" value={this.state.userName} placeholder="Email Id here..."/> 
+                    <input onChange={this.handleChange} className="userName child" type="email" name="email" value={this.state.email} placeholder="Email Id here..."/> 
                
                     <input onChange={this.handleChange} className="password child" type="password" name="password" value={this.state.password} placeholder="Password here..." autoComplete="none"/>
                
