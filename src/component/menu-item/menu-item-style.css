@@ -12,6 +12,7 @@
     justify-content: center;
     margin: 10px;
     overflow: hidden;
+    border: 1.8px solid white;
     
 }
 
@@ -19,9 +20,10 @@
     transform: scale(1.1) rotate(2deg);
     transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
     cursor: pointer;
+    
 }
 .container:hover{
-    border: 1px solid black;
+    border: 1.8px solid white;
 }
 
 .content{
@@ -43,7 +45,7 @@
     flex-shrink: 1;
     height: 300px;
     display:flex;
-    border: 1px solid black;
+    border: 1px solid white;
     align-items: center;
     justify-content: center;
     background-position: center;
