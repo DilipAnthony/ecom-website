@@ -7,25 +7,20 @@ import Header from "./component/header/header-com.jsx"
 import SIgn from "./pages/signIn-SignUp-Page/SignIn-SignUp-Com"
 import {auth, createOtherUser} from "./firebase/firebase-utils.js"
 import {SignInWithFacebook} from "./firebase/firebase-utils.js"
-import 'react-app-polyfill/stable';
+import {connect} from "react-redux";
+import {setCurrentUser} from "./redux/user/user-action"
+import SignIn from './component/SIgnIn-com/SignIn-com';
 
 
 
 
 class App extends React.Component {
-  constructor(){
-    super();
-
-    this.state = {
-      isSignedIn: null
-    }
-  
-}
 
 unsubscribeFromAuth = null;
 
 componentDidMount(){
   this.unsubscribeFromAuth = auth.onAuthStateChanged(async user =>{
+    const {setCurrentUser} = this.props;
     if(user){
     const userRef = await createOtherUser(user);
     userRef.onSnapshot(snap => {
@@ -33,22 +28,18 @@ componentDidMount(){
       const {id} = snap;
     console.log(snap.data());
   
-    this.setState({
-      isSignedIn: {
+    setCurrentUser({
         displayName,
         email,
         createdAt,
         id
-      }
     })
     
     
     })
   }
   else{
-    this.setState({
-      isSignedIn: user
-    })
+    setCurrentUser(user)
   }
   })
 }
@@ -60,23 +51,19 @@ componentWillUnmount(){
 render(){
   return (
     <div className="App">
-    <Header status={this.state.isSignedIn}/>
+    <Header />
     <Switch>
       <Route exact path="/" component={Homepage} />
       <Route exact path="/shop" component={Shop} />
-      <Route exact path="/signin" render={() => (this.state.isSignedIn ? <Homepage /> : <SIgn />) } />
+      <Route exact path="/signin" component={SIgn}/>
     </Switch>
     </div>
   );
 }
 }
 
-// render={(props) => <Dashboard {...props} isAuthed={true}
-{/* <Route 
-        {...props} 
-        render={props => (
-          this.state.authenticated ?
-            <Component {...props} /> :
-            <Redirect to='/login' /> */}
+const mapDispatchToProps = dispatch => ({
+  setCurrentUser: use => dispatch(setCurrentUser(use))
+})
 
-export default App;
+export default connect(null, mapDispatchToProps)(App);

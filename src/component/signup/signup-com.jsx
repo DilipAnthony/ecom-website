@@ -69,7 +69,7 @@ class SignUp extends React.Component{
 
                 <input onChange={this.handleChange} className="password child" type="password" name="confirmPassword" value={this.state.confirmPassword} placeholder="Re-enter the Password here..." autoComplete="none"/>
 
-                <input onClick={this.handleClick} className="submit child" type="submit" value="Sign in" />
+                <input onClick={this.handleClick} className="submit child" type="submit" value="Register here" />
             </form>
             </div>
         )

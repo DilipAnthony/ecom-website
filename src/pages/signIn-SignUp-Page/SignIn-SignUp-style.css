@@ -1,5 +1,9 @@
 .Sign-Parent{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;     
     width: 60vw;
+}
+
+.last{
+    margin-left: 310px;
 }

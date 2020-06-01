@@ -3,13 +3,17 @@ import {Link} from "react-router-dom";
 import {ReactComponent as Logo} from "../../assests/crown.svg";
 import "./header-style.css"
 import {auth} from "../../firebase/firebase-utils.js"
+import {connect} from "react-redux";
 
 
-const Header = ({status}) => {
+const Header = ({isSignedIn}) => {
+
+    console.log("status is" + isSignedIn);
+    
     return(
         <div className="header">
-            {status ?
-                <h1 className="customerName">Hi {status.displayName}, Welcome to Shoppers Area</h1>
+            {isSignedIn ?
+                <h1 className="customerName">Hi {isSignedIn.displayName}, Welcome to Shoppers Area</h1>
                 :
                 null}
             <Link to="/" className="logo">
@@ -18,10 +22,8 @@ const Header = ({status}) => {
             </Link>
             <div className="header-sub">
                 {
-                status ?
+                    isSignedIn ?
                  <Link className="header-link" onClick={()=>auth.signOut()}><h1>Sign Out</h1></Link>
-                
-                
                 :
                 <Link to="/signin" className="header-link">
                     <h1>Sign in</h1>
@@ -39,4 +41,9 @@ const Header = ({status}) => {
     )
 }
 
-export default Header;
+const mapStateToProps = state => ({
+    isSignedIn: state.user.isSignedIn
+    
+});
+
+export default connect(mapStateToProps)(Header);

@@ -1,7 +1,7 @@
 .signUp-Parent{
     display: flex;
     flex-direction: column;
-    width: 40vw;
+    width: 35vw;
     color: white;
     padding: 20px;
     border-radius: 20px;
@@ -9,5 +9,5 @@
     border: 2px solid white;
     font-family: 'Caveat', cursive;
     font-size: 20px;
-    margin-left: 200px;
+    margin-left: auto;
 }

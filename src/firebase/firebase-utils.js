@@ -53,7 +53,6 @@ const config = {
   export const signInWithGoogle = () => auth.signInWithPopup(provider);
 
   const provider1 = new firebase.auth.FacebookAuthProvider();
-  
   export const SignInWithFacebook = () => auth.signInWithPopup(provider1);
 
   export default firebase;

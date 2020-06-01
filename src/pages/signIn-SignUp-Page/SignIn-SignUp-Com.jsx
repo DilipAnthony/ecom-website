@@ -6,10 +6,10 @@ import SignUp from "../../component/signup/signup-com.jsx"
 const Sign = ({status}) => {
     return(
         <div className="Sign-Parent">
-        <div>
+        <div className="first">
             <SignIn status={status}/>
             </div>
-            <div>
+            <div className="last">
             <SignUp />
             </div>
         </div>
