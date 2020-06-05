@@ -1,0 +1,14 @@
+.cart-dropdown{
+    position: absolute;
+    width: 250px;
+    height: 350px;
+    border: 1px solid white;
+    Right: 78px;
+    bottom: 200px;
+    background-color: black;
+    color: white;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+
+}

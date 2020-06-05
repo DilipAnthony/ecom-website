@@ -1,12 +1,15 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import {ReactComponent as Logo} from "../../assests/crown.svg";
+import {ReactComponent as Bag} from "../../assests/bag.svg";
 import "./header-style.css"
 import {auth} from "../../firebase/firebase-utils.js"
 import {connect} from "react-redux";
+import CartIcon from "../cartIcon/cartIcon-com"
+import CartContainer from "../cart-container/cart-container-com"
 
 
-const Header = ({isSignedIn}) => {
+const Header = ({isSignedIn, hidden}) => {
 
     console.log("status is" + isSignedIn);
     
@@ -35,14 +38,18 @@ const Header = ({isSignedIn}) => {
                 <Link to="/shop" className="header-link">
                     <h1>Contact</h1>
                 </Link>
+                <CartIcon />
+                
             </div>
-            
+            { hidden ? null : <CartContainer /> }
         </div>
+        
     )
 }
 
 const mapStateToProps = state => ({
-    isSignedIn: state.user.isSignedIn
+    isSignedIn: state.user.isSignedIn,
+    hidden: state.cart.hidden
     
 });
 
