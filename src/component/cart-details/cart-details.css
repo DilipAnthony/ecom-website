@@ -1,0 +1,6 @@
+.cart-area{
+    display:flex;
+    margin: 5px;
+    margin-top: 10px;
+    justify-content: space-between;
+}

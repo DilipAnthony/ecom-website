@@ -4,11 +4,29 @@
     height: 350px;
     border: 1px solid white;
     Right: 78px;
-    bottom: 200px;
+    bottom: 240px;
     background-color: black;
     color: white;
     z-index: 1;
     display: flex;
-    justify-content: center;
-
+    flex-direction: column;
+    
+overflow: scroll;
 }
+
+#check-out{
+    width: 100px;
+}
+
+::-webkit-scrollbar {
+    width: 0.5em;
+  }
+   
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+::-webkit-scrollbar-thumb {
+    background-color: rgb(55, 54, 56);
+    outline: 1px solid rgb(15, 86, 156);
+  }

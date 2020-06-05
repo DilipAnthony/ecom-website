@@ -16,10 +16,11 @@
     width: 20%;
     height: 300px;
     display: flex;
+    flex-direction: column;
     border: 1px solid white;
     margin-right: 15px;
-    align-items: flex-end;
-    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     background-size: cover;
     flex-grow: 1;
     
@@ -41,13 +42,13 @@
 }
 
 .shop-name1:hover{
-    background-color: rgb(5, 5, 78);
+    background-color: rgb(2, 2, 37);
     color: black;
 }
 
 
 .shop-name{
-    width: 100%;
+    width: 70%;
     height: 40px;
     background-color: black;
     opacity: 0.8;
