@@ -10,6 +10,7 @@ import {SignInWithFacebook} from "./firebase/firebase-utils.js"
 import {connect} from "react-redux";
 import {setCurrentUser} from "./redux/user/user-action"
 import SignIn from './component/SIgnIn-com/SignIn-com';
+import Checkout from "./pages/checkout/checkout-com"
 
 
 
@@ -56,6 +57,7 @@ render(){
       <Route exact path="/" component={Homepage} />
       <Route exact path="/shop" component={Shop} />
       <Route exact path="/signin" render={() => this.props.isSignedIn ? <Redirect to="/" /> : <SIgn />}/>
+      <Route exact path="/checkout" component={Checkout} />
     </Switch>
     </div>
   );
