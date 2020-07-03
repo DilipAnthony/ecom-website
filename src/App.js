@@ -21,6 +21,8 @@ unsubscribeFromAuth = null;
 
 componentDidMount(){
   this.unsubscribeFromAuth = auth.onAuthStateChanged(async user =>{
+    console.log(user);
+    
     const {setCurrentUser} = this.props;
     if(user){
     const userRef = await createOtherUser(user);
