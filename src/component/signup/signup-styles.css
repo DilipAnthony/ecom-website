@@ -1,13 +1,21 @@
-.signUp-Parent{
-    display: flex;
-    flex-direction: column;
-    width: 35vw;
-    color: white;
-    padding: 20px;
-    border-radius: 20px;
-    text-align: center;
-    border: 2px solid white;
-    font-family: 'Caveat', cursive;
-    font-size: 20px;
-    margin-left: auto;
+.signUp-Parent {
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  border: 2px solid white;
+  font-family: "Caveat", cursive;
+  font-size: 20px;
+  margin-left: auto;
+  justify-content: center;
+}
+
+.recaptcha {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }

@@ -4,7 +4,7 @@ import {connect} from "react-redux"
 import {CartItemsAdd} from "../../redux/cart/cart-action"
 import { CartActionType } from "../../redux/cart/cartActionType";
 
-const COllection_Preview = ({items, title, routeName, CartItemsAdd}) => {
+const COllection_Preview = ({items, title, CartItemsAdd}) => {
     console.log(items);
     
     return(

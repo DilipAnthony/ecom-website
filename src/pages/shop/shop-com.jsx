@@ -1,23 +1,22 @@
 import React from "react";
-import SHOP_DATA from "../../redux/ShopData/shop_data";
-import Collection from "../../component/collection-preview/collection-preview-com.jsx"
-import {connect} from "react-redux"
 
-const Shop = ({shopData}) => {
-        return (
-            <div>
-            {shopData.map(({id, ...otherProps}) => 
-            <Collection 
-                key={id}
-                {...otherProps}
-            />)}
-                
-            </div>
+import CollectionPreview from "../../component/CollectionPreview/collectionPreview-com"
+import {Switch, Route} from "react-router-dom"
+import Category from "../../component/Category/category-com"
+
+
+const Shop = ({match}) =>  {
+    console.log("enadan da venum" + match.path);
+    
+    return(
+        <Switch>
+            <Route exact path="/shop/:categoryId" component={Category}/>
+           <Route path="/shop" component={CollectionPreview} />
+           
+           
+        </Switch>
+            
         )
     }
 
-    const mapStateToProps = state => ({
-        shopData: state.shopData.shop_Data
-    })
-
-export default connect(mapStateToProps)(Shop);
+export default Shop;

@@ -56,10 +56,10 @@ render(){
     <div className="App">
     <Header />
     <Switch>
-      <Route exact path="/" component={Homepage} />
-      <Route exact path="/shop" component={Shop} />
+      <Route path="/shop" component={Shop} />
       <Route exact path="/signin" render={() => this.props.isSignedIn ? <Redirect to="/" /> : <SIgn />}/>
       <Route exact path="/checkout" component={Checkout} />
+      <Route path="/" component={Homepage} />
     </Switch>
     </div>
   );
