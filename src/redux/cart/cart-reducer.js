@@ -28,6 +28,12 @@ const CartReducer = (state = INITIAL_STATE, action) => {
         ),
       };
 
+    case CartActionType.CART_EMPTY:
+      return {
+        ...state,
+        cartItems: [],
+      };
+
     default:
       return state;
   }
