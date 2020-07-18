@@ -1,59 +1,59 @@
-.signIn-Container{
-    display: flex;
-    flex-direction: column;
-    width: 30vw;
-    color: white;
-    padding: 10px;
-    border-radius: 20px;
-    text-align: center;
-    border: 2px solid white;
-    font-family: 'Caveat', cursive;
-    font-size: 20px;;
+.signIn-Container {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  border: 2px solid white;
+  font-family: "Caveat", cursive;
+  font-size: 1rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
 }
 
-.signIn-Head{
-    margin-bottom: 30px;
+.signIn-Head {
+  margin-bottom: 30px;
 }
 
-.sign-In-Form{
-    display: flex;
-    flex-direction: column;
+.sign-In-Form {
+  display: flex;
+  flex-direction: column;
 }
 
-.child{
-    margin: 10px;
-    height: 30px;
-    border-radius: 20px;
-    border: none;
-    background-color: transparent;
-    border-bottom: 1px solid white;
-    padding-left: 10px;
-    color: white;
-    outline: none;
-    box-shadow: 0px 15px 10px -16px white;
-
-    
+.child {
+  margin: 10px;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+  padding-left: 10px;
+  color: white;
+  outline: none;
+  box-shadow: 0px 15px 10px -16px white;
 }
 
 .submit {
-    width: 30%;
-    align-self: center;
-    border: 1px solid white;
-    background-color: black;
+  width: 30%;
+  align-self: center;
+  border: 1px solid white;
+  background-color: black;
 }
-.submit:hover{
-    background-color: white;
-    cursor: pointer;
-    color: black;
-    font-weight: bold;
-}
-
-.userName{
-    font-size: 20px;
-    font-family: 'Crete Round', serif;
+.submit:hover {
+  background-color: white;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
 }
 
-.password{
-    font-size: 20px;
-    font-family: 'Crete Round', serif;
+.userName {
+  font-size: 20px;
+  font-family: "Crete Round", serif;
+}
+
+.password {
+  font-size: 20px;
+  font-family: "Crete Round", serif;
 }

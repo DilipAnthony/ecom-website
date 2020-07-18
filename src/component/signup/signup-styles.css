@@ -8,8 +8,10 @@
   text-align: center;
   border: 2px solid white;
   font-family: "Caveat", cursive;
-  font-size: 20px;
-  margin-left: auto;
+  font-size: 1rem;
+  align-self: center;
+  margin-right: 2rem;
+  margin-top: 2rem;
 }
 
 .recaptcha {

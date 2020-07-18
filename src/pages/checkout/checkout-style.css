@@ -1,5 +1,6 @@
-.checkout{
-    display: flex;
-    justify-content: center;
-    border: 1px solid white;
+.checkout {
+  max-width: 90%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
