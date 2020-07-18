@@ -1,9 +1,8 @@
-.Sign-Parent{
-    display: flex;
-    justify-content: space-between;     
-    width: 60vw;
+.Sign-Parent {
+  display: flex;
 }
 
-.last{
-    margin-left: 310px;
+.last {
+  margin-left: 20.3rem;
+  margin-right: 10rem;
 }

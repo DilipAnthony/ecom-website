@@ -16,12 +16,12 @@
 }
 
 .shop-each-card {
-  min-width: 21vw;
+  width: 21vw;
   height: 300px;
   display: flex;
   flex-direction: column;
   border: 1px solid white;
-  margin-right: 15px;
+  margin-right: 1.3rem;
   align-items: center;
   justify-content: space-between;
   background-size: cover;

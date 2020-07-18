@@ -1,7 +1,11 @@
-body{
-    padding: 60px;
-    background-color: black;
-    background-image: url('test1.jpg');
-    background-position: center; /* Center the image */
+body {
+  padding: 4rem;
+  background-color: black;
+  background-image: url("test1.jpg");
+  background-position: center; /* Center the image */
   background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+html {
+  box-sizing: border-box;
 }
