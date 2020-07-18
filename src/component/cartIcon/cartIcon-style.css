@@ -1,21 +1,20 @@
-.cart-parent{
-    background-color: white;
-    width: 20px;
-    height: 25px;
-    color: black;
-    border-radius: 25px;;
-
+.cart-parent {
+  background-color: white;
+  width: 20px;
+  height: 25px;
+  color: black;
+  border-radius: 25px;
 }
 
-.bagIcon{
-    width: 20px;
-    height: 20px;
-    margin-left: 4px;
-    margin-top: 1px;
+.bagIcon {
+  width: 20px;
+  height: 20px;
+  margin-left: 4px;
+  margin-top: 1px;
 }
 
-.count{
-    position: relative;
-    bottom: 18px;
-    left: 10.5px;
+.count {
+  position: relative;
+  bottom: 15px;
+  left: 10.5px;
 }
