@@ -1,5 +1,6 @@
 .shop-parent {
   color: white;
+  font-size: 0.7rem;
 }
 
 .shop-container {
@@ -7,26 +8,38 @@
   flex-direction: column;
   color: white;
   margin-bottom: 40px;
-  flex-wrap: wrap;
 }
 
 .shop-card {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .shop-each-card {
-  width: 21vw;
+  width: 20vw;
   height: 300px;
   display: flex;
   flex-direction: column;
   border: 1px solid white;
-  margin-right: 1.3rem;
+  margin-right: 2%;
   align-items: center;
   justify-content: space-between;
   background-size: cover;
-  flex-grow: 0;
   margin-top: 30px;
+  flex-grow: 1;
+}
+
+@media (max-width: 700px) {
+  .shop-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+  }
+}
+
+@media (max-width: 700px) {
+  .shop-each-card {
+    width: 40vw;
+  }
 }
 
 .shop-each-card:hover {
