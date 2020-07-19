@@ -5,7 +5,7 @@
   margin-bottom: 4rem;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .header {
     font-size: 0.6rem;
   }
@@ -24,7 +24,7 @@
   align-self: center;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .header-link {
     margin-left: 10px;
     padding-right: 5px;
@@ -51,7 +51,7 @@
   text-align: center;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .logo-title {
     margin-left: 10px;
     width: 130px;

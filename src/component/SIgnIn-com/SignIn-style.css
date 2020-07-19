@@ -13,6 +13,14 @@
   margin-top: 2rem;
 }
 
+@media screen and (max-width: 800px) {
+  .signIn-Container {
+    width: 70vw;
+    font-size: 0.7rem;
+    margin: auto;
+  }
+}
+
 .signIn-Head {
   margin-bottom: 30px;
 }
