@@ -6,15 +6,35 @@
   border-radius: 25px;
 }
 
+@media screen and (max-width: 800px) {
+  .cart-parent {
+    width: 17px;
+    height: 21px;
+  }
+}
+
 .bagIcon {
   width: 20px;
   height: 20px;
   margin-left: 4px;
   margin-top: 1px;
 }
+@media screen and (max-width: 800px) {
+  .bagIcon {
+    width: 16px;
+    height: 16px;
+  }
+}
 
 .count {
   position: relative;
   bottom: 15px;
   left: 10.5px;
+}
+
+@media screen and (max-width: 800px) {
+  .count {
+    bottom: 11px;
+    left: 10.5px;
+  }
 }
