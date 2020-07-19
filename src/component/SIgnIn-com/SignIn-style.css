@@ -15,7 +15,7 @@
 
 @media screen and (max-width: 800px) {
   .signIn-Container {
-    width: 70vw;
+    width: 80%;
     font-size: 0.7rem;
     margin: auto;
   }
