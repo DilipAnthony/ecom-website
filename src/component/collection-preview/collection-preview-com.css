@@ -23,7 +23,7 @@
   height: 300px;
   display: flex;
   flex-direction: column;
-  border: 1px solid white;
+  border: 1px solid rgb(156, 143, 143);
   margin-right: 2%;
   align-items: center;
   justify-content: space-between;
@@ -41,7 +41,7 @@
 
 @media (max-width: 700px) {
   .shop-each-card {
-    min-width: 40vw;
+    min-width: 45vw;
   }
 }
 
@@ -106,6 +106,18 @@
   display: none;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+  .shop-name1 {
+    display: block;
+    height: 30px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 50%;
+    text-align: center;
+  }
 }
 
 a {
