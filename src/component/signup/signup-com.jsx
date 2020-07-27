@@ -110,15 +110,13 @@ class SignUp extends React.Component {
             placeholder="Re-enter the Password here..."
             autoComplete="none"
           />
-          <div className="recaptcha">
-            <Recaptcha
-              sitekey="6Ldne7AZAAAAADK_nN-lwy1j0zZeH2BS65ngD1Cz"
-              render="explicit"
-              onloadCallback={this.recaptchaCallback}
-              verifyCallback={this.recaptchaVerifyCallback}
-              theme="dark"
-            />
-          </div>
+          <Recaptcha
+            sitekey="6Ldne7AZAAAAADK_nN-lwy1j0zZeH2BS65ngD1Cz"
+            render="explicit"
+            onloadCallback={this.recaptchaCallback}
+            verifyCallback={this.recaptchaVerifyCallback}
+            theme="dark"
+          />
 
           <input
             onClick={this.handleClick}
