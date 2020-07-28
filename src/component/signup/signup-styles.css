@@ -25,17 +25,14 @@
 }
 
 #g-recaptcha {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 10px;
+  height: 30px;
+  box-shadow: 0px 15px 10px -16px white;
 }
 
 @media screen and (max-width: 800px) {
   #g-recaptcha {
-    transform: scale(0.77);
-    -webkit-transform: scale(0.77);
-    margin-left: auto;
-    margin-right: auto;
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
   }
 }
