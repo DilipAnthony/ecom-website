@@ -2,12 +2,14 @@ import React from "react";
 import CheckoutContent from "../../component/checkout-com/checkoutContent-com";
 import "./checkout-style.css";
 import { auth } from "../../firebase/firebase-utils.js";
-import { Route, Switch, Redirect } from "react-router-dom";
+import { Redirect } from "react-router-dom";
+import { connect } from "react-redux";
 
-const Checkout = () => {
+const Checkout = ({ isSignedIn }) => {
   const user = auth.currentUser;
-  console.log("Alpha testing" + user);
-  if (user) {
+  console.log("Current user is " + JSON.stringify(isSignedIn));
+  console.log("test user" + user);
+  if (isSignedIn) {
     return (
       <div className="checkout">
         <CheckoutContent />
@@ -19,4 +21,8 @@ const Checkout = () => {
   }
 };
 
-export default Checkout;
+const mapStateToProps = (state) => ({
+  isSignedIn: state.user.isSignedIn,
+});
+
+export default connect(mapStateToProps)(Checkout);

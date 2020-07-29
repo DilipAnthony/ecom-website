@@ -25,9 +25,7 @@
 }
 
 #g-recaptcha {
-  margin: 10px;
-  height: 30px;
-  box-shadow: 0px 15px 10px -16px white;
+  margin: auto;
 }
 
 @media screen and (max-width: 800px) {
