@@ -53,6 +53,7 @@ class SignUp extends React.Component {
             password
           );
           await createOtherUser(user, { displayName });
+          console.log("testing square" + JSON.stringify(user));
 
           this.setState({
             displayName: "",

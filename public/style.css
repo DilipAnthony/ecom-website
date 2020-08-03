@@ -12,3 +12,33 @@ body {
     padding: 10px;
   }
 }
+
+.searchBoxDiv {
+  margin-bottom: 30px;
+  width: 60%;
+}
+
+.searchBox {
+  width: 150px;
+  transition: width 0.4s ease-in-out;
+  height: 30px;
+  border: black solid 1px;
+  border-radius: 25px;
+  padding-left: 5px;
+  margin-left: 2px;
+  outline: none;
+  font-family: "Chelsea Market", cursive;
+  background-color: rgb(158, 167, 168);
+  box-sizing: border-box;
+}
+
+.searchBox:focus {
+  width: 60%;
+}
+
+.searchBoxDiv:focus {
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
